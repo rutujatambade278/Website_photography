@@ -108,7 +108,7 @@ const Portfolio = () => {
       {/* CTA */}
       <section className="cta" data-aos="fade-up">
         <h2>Let’s Create Something Beautiful</h2>
-        <button>Book Your Shoot</button>
+        <button> <a href="/contact">Book Now</a></button>
       </section>
 
     </div>

@@ -81,18 +81,8 @@ const Footer = () => {
       <div className="footer-bottom">
         © 2025 <b>The Wedding Lens Co.</b> — All Rights Reserved
       </div>
-
-      {/* FLOATING BUTTONS */}
-      <a href="tel:+918856886940" className="floating-call">📞</a>
-
-      <a
-        href="https://wa.me/918882328838?text=Hi%20The%20Wedding%20Lens%20Co."
-        target="_blank"
-        rel="noreferrer"
-        className="floating-whatsapp"
-      >
-        💬
-      </a>
+ 
+    
     </>
   );
 };

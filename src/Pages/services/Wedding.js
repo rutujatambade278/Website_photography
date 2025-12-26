@@ -52,7 +52,8 @@ const Wedding = () => {
     
       <section className="wedding-cta">
         <h2>Let’s Capture Your Wedding</h2>
-        <button>Book Your Date</button>
+         <button><a href="/contact">Book Your Date</a></button>
+    
       </section>
 
     </div>

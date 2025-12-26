@@ -9,21 +9,24 @@ const Header = () => {
 
   return (
     <header className="header">
+      {/* LOGO */}
       <div className="logo-container">
         <img src="/photos/logo1.png" className="logo-img" alt="Logo" />
         <span className="logo-text">FRAME & GLOW</span>
       </div>
 
+      {/* MOBILE MENU BUTTON */}
       <div
         className="mobile-menu-btn"
         onClick={() => setMobileOpen(!mobileOpen)}
       >
-        {mobileOpen ? "✖" : "☰"}
+        {mobileOpen ? "✖" : ""}
       </div>
 
+      {/* NAV */}
       <nav className={`nav-center ${mobileOpen ? "open" : ""}`}>
-        <Link to="/">Home</Link>
-        <Link to="/portfolio">Portfolio</Link>
+        <Link to="/" onClick={() => setMobileOpen(false)}>Home</Link>
+        <Link to="/portfolio" onClick={() => setMobileOpen(false)}>Portfolio</Link>
 
         {/* ABOUT */}
         <div
@@ -59,9 +62,23 @@ const Header = () => {
           </div>
         </div>
 
-        <Link to="/gallery">Gallery</Link>
-        <Link to="/contact">Contact</Link>
+        <Link to="/gallery" onClick={() => setMobileOpen(false)}>Gallery</Link>
+        <Link to="/contact" onClick={() => setMobileOpen(false)}>Contact</Link>
       </nav>
+
+      {/* RIGHT SIDE CALL + WHATSAPP */}
+     <div className="header-actions">
+  <a href="tel:+918856886940" className="header-call">📞</a>
+
+  <a
+    href="https://wa.me/918882328838?text=Hi%20The%20Wedding%20Lens%20Co."
+    target="_blank"
+    rel="noreferrer"
+    className="header-whatsapp"
+  >
+    💬
+  </a>
+</div>
     </header>
   );
 };

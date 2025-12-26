@@ -79,7 +79,8 @@ const Maternity = () => {
       {/* Call to Action */}
       <section className="cta animate-on-scroll fade-up">
         <h2>Book Your Maternity Session Today</h2>
-        <button>Book Now</button>
+        <button><a href="/contact">Book Now</a></button>
+    
       </section>
     </div>
   );

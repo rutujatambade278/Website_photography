@@ -55,7 +55,8 @@ const Engagement = () => {
       <section className="eng-cta">
         <h2>Make Your Engagement Unforgettable</h2>
         <p>Let’s capture love, laughter & lifelong memories</p>
-        <button>Book Engagement Shoot</button>
+         <button><a href="/contact">Book Engagement Shoot</a></button>
+    
       </section>
     </>
   );
