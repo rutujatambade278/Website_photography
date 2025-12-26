@@ -1,0 +1,145 @@
+/* Basic Reset */
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: #f0f7ff;
+  color: #333;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+  background: linear-gradient(to right, #caaee7, #a0b0cc);
+  color: #fff;
+  margin-bottom: 0; /* remove bottom gap */
+}
+.hero h1 {
+    padding-top: 10%;
+  font-size: 3rem;
+  margin: 0; /* remove default margin */
+}
+.hero p {
+  font-size: 1.2rem;
+  margin: 0; /* remove default margin */
+  padding-bottom: 5%;
+}
+
+/* Image Grid */
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 5px; /* smaller gap for tighter layout */
+  padding: 0; /* remove padding above/below */
+  margin: 0; /* remove extra margin */
+}
+.grid-item {
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.8s ease;
+}
+.grid-item img {
+  width: 100%;
+  height: 100%;
+  display: block; /* remove inline spacing */
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+.grid-item:hover img {
+  transform: scale(1.05) rotate(1deg);
+}
+
+/* Animations */
+.animate-on-scroll.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+.slide-left {
+  transform: translateX(-50px);
+}
+.slide-left.show {
+  transform: translateX(0);
+}
+.slide-right {
+  transform: translateX(50px);
+}
+.slide-right.show {
+  transform: translateX(0);
+}
+.fade-up {
+  transform: translateY(20px);
+}
+.fade-up.show {
+  transform: translateY(0);
+}
+
+/* Client Reviews Section */
+.reviews {
+  padding: 50px 20px;
+  text-align: center;
+}
+.section-title {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+.review-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+.review-card {
+  background: #e0f0ff;
+  padding: 25px;
+  border-radius: 15px;
+  width: 300px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.review-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+.review-card p {
+  font-size: 1rem;
+  margin-bottom: 15px;
+  color: #333;
+}
+.review-card h4 {
+  font-weight: 600;
+  color: #2575fc;
+}
+
+/* Call to Action */
+.cta {
+  text-align: center;
+  padding: 60px 20px;
+  background: #e0f0ff;
+  border-radius: 20px;
+  margin: 50px 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.8s ease;
+}
+.cta h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+.cta button {
+  padding: 15px 35px;
+  font-size: 1rem;
+  background: linear-gradient(to right, #6a11cb, #2575fc);
+  color: white;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.cta button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 25px rgba(37, 117, 252, 0.5);
+}

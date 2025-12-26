@@ -1,0 +1,130 @@
+/* ===== MAIN SECTION ===== */
+.style-section {
+  padding: 140px 8% 100px; /* 🔥 TOP padding जास्त */
+  background: linear-gradient(135deg, #0f0f0f, #1c1c1c);
+  color: #ffffff;
+  min-height: 100vh;
+}
+
+/* ===== HEADER ===== */
+.style-header {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.style-header h1 {
+  font-size: 3.2rem;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+}
+
+.style-header p {
+  color: #bdbdbd;
+  margin-top: 14px;
+  font-size: 1.15rem;
+  max-width: 650px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
+}
+
+/* ===== BRIEF TEXT ===== */
+.style-brief {
+  max-width: 900px;
+  margin: 0 auto 90px;
+  text-align: center;
+}
+
+.style-brief p {
+  font-size: 1.12rem;
+  color: #d6d6d6;
+  line-height: 1.85;
+}
+
+/* ===== GRID ===== */
+.style-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 40px; /* premium spacing */
+}
+
+/* ===== CARD ===== */
+.style-card {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 22px;
+  padding: 42px 34px;
+  text-align: center;
+  box-shadow: 0 25px 45px rgba(0, 0, 0, 0.45);
+  transition: 
+    transform 0.7s ease,
+    box-shadow 0.7s ease,
+    opacity 0.7s ease;
+  opacity: 0;
+  transform: translateY(50px);
+}
+
+/* ===== SHOW ANIMATION ===== */
+.style-card.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ===== HOVER EFFECT ===== */
+.style-card:hover {
+  transform: translateY(-12px) scale(1.04);
+  box-shadow: 0 35px 70px rgba(0, 0, 0, 0.65);
+}
+
+/* ===== ICON ===== */
+.style-icon {
+  font-size: 2.8rem;
+  margin-bottom: 22px;
+  display: inline-block;
+}
+
+/* ===== TEXT ===== */
+.style-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 14px;
+}
+
+.style-card p {
+  font-size: 1.05rem;
+  color: #d1d1d1;
+  line-height: 1.7;
+}
+
+/* ===== EXTRA SECTION ===== */
+.style-extra {
+  margin-top: 120px;
+  text-align: center;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.style-extra h2 {
+  font-size: 2.1rem;
+  margin-bottom: 22px;
+}
+
+.style-extra p {
+  font-size: 1.08rem;
+  color: #cfcfcf;
+  line-height: 1.8;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .style-section {
+    padding: 120px 6% 80px;
+  }
+
+  .style-header h1 {
+    font-size: 2.4rem;
+  }
+
+  .style-grid {
+    gap: 30px;
+  }
+}

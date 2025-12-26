@@ -1,0 +1,147 @@
+
+.wedding-page {
+  width: 100%;
+  overflow: hidden;
+}
+
+/* HERO */
+.wedding-hero {
+  position: relative;
+  height: 100vh;
+}
+
+.wedding-hero-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.wedding-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.45);
+}
+
+.wedding-hero-text {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translateY(-50%);
+  color: white;
+  animation: fadeUp 1.2s ease;
+}
+
+.wedding-hero-text span {
+  letter-spacing: 4px;
+  color: #d4af37;
+  font-size: 14px;
+}
+
+.wedding-hero-text h1 {
+  font-size: 64px;
+  margin: 15px 0;
+}
+
+.wedding-hero-text p {
+  font-size: 18px;
+}
+
+/* INTRO */
+.wedding-intro {
+  max-width: 900px;
+  margin: 120px auto;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.wedding-intro h2 {
+  font-size: 42px;
+  margin-bottom: 20px;
+}
+
+.wedding-intro p {
+  font-size: 18px;
+  line-height: 1.8;
+  color: #444;
+}
+
+/* GALLERY */
+.wedding-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  padding: 0 10% 120px;
+}
+
+.wedding-gallery img {
+  width: 100%;
+  height: 340px;
+  object-fit: cover;
+  border-radius: 18px;
+  transition: 0.5s ease;
+}
+
+.wedding-gallery img:hover {
+  transform: scale(1.05);
+}
+
+/* QUOTE */
+.wedding-quote {
+  background: #111;
+  color: white;
+  padding: 120px 20px;
+  text-align: center;
+  font-family: "Georgia", serif;
+}
+
+.wedding-quote h2 {
+  font-size: 36px;
+}
+
+/* CTA */
+.wedding-cta {
+  text-align: center;
+  padding: 120px 20px;
+}
+
+.wedding-cta h2 {
+  font-size: 38px;
+  margin-bottom: 25px;
+}
+
+.wedding-cta button {
+  padding: 14px 40px;
+  border: none;
+  background: #d4af37;
+  color: black;
+  font-size: 18px;
+  cursor: pointer;
+  transition: 0.4s ease;
+}
+
+.wedding-cta button:hover {
+  transform: scale(1.08);
+}
+
+/* ANIMATION */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .wedding-gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .wedding-hero-text h1 {
+    font-size: 42px;
+  }
+}

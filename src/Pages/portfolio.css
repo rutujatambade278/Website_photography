@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.portfolio {
+  background: #d8ddeb;
+  color: white;
+}
+
+/* HERO VIDEO */
+.video-carousel,
+.video-slide {
+  height: 100vh;
+}
+
+.video-slide {
+  position: relative;
+}
+
+.video-slide video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* DARK CINEMATIC OVERLAY */
+.video-overlay {
+  position: absolute;
+  inset: 0;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+
+.video-overlay h1 {
+  font-size: 4rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #000;  
+}
+
+.video-overlay p {
+  font-size: 1.2rem;
+  margin-top: 15px;
+  opacity: 0.9;
+  color: #000;   
+}
+
+
+/* INTRO */
+.intro {
+  padding: 80px 20px;
+  text-align: center;
+  color: #000;  
+  animation-fill-mode: backwards;
+}
+
+.intro h2 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  animation-fill-mode: forwards;
+}
+
+.intro p {
+  max-width: 950px;
+  margin: auto;
+  opacity: 0.85;
+}
+
+/* MASONRY GALLERY */
+.masonry {
+  column-count: 3;
+  column-gap: 15px;
+  padding: 40px;
+}
+
+.masonry img {
+  width: 100%;
+  margin-bottom: 15px;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: transform 0.4s ease, box-shadow 0.4s;
+}
+
+.masonry img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+}
+
+/* LIGHTBOX */
+.overlay {
+  background: rgba(0, 0, 0, 0.9);
+}
+
+.lightbox {
+  max-width: 90%;
+  margin: auto;
+  position: relative;
+}
+
+.lightbox img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.lightbox button {
+  position: absolute;
+  top: -45px;
+  right: 0;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+/* CTA */
+.cta {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.cta h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.cta button {
+  padding: 15px 40px;
+  border-radius: 50px;
+  border: none;
+  background: linear-gradient(to right, #6366f1, #3b82f6);
+  color: white;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: transform 0.3s;
+}
+
+.cta button:hover {
+  transform: scale(1.1);
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .masonry {
+    column-count: 1;
+  }
+
+  .video-overlay h1 {
+    font-size: 2.5rem;
+  }
+}

@@ -1,0 +1,193 @@
+/* ================= PAGE ================= */
+.family-page {
+  font-family: "Poppins", sans-serif;
+  background: #faf7f2;
+  color: #333;
+  overflow-x: hidden;
+}
+
+/* ================= HERO ================= */
+.family-hero {
+  height: 100vh;
+  /* background: url("/photos/family/hero.jpg") center / cover no-repeat; */
+  position: relative;
+  animation: heroZoom 14s ease-in-out infinite alternate;
+}
+
+@keyframes heroZoom {
+  from { background-size: 100%; }
+  to   { background-size: 112%; }
+}
+
+.family-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to right,
+    rgba(0,0,0,0.55),
+    rgba(0,0,0,0.25)
+  );
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 8%;
+  color: #fff;
+}
+
+.family-overlay h1 {
+  font-size: 68px;
+  font-weight: 700;
+  animation: heroText 1.2s ease forwards;
+}
+
+.family-overlay p {
+  font-size: 20px;
+  letter-spacing: 2px;
+  margin-top: 12px;
+  animation: heroText 1.6s ease forwards;
+}
+
+@keyframes heroText {
+  from {
+    opacity: 0;
+    transform: translateY(45px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ================= INTRO ================= */
+.family-intro {
+  padding: 90px 15%;
+  text-align: center;
+}
+
+.family-intro h2 {
+  font-size: 42px;
+  margin-bottom: 22px;
+}
+
+.family-intro p {
+  font-size: 18px;
+  color: #666;
+  line-height: 1.9;
+}
+
+/* ================= GALLERY ================= */
+.family-gallery {
+  padding: 50px 8%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 28px;
+}
+
+.family-card {
+  overflow: hidden;
+  border-radius: 20px;
+  cursor: pointer;
+  position: relative;
+  transition: 0.6s ease;
+}
+
+.family-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.35), transparent);
+  opacity: 0;
+  transition: 0.5s ease;
+}
+
+.family-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.7s ease;
+}
+
+.family-card:hover img {
+  transform: scale(1.1);
+}
+
+.family-card:hover::after {
+  opacity: 1;
+}
+
+.family-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 30px 60px rgba(0,0,0,0.25);
+}
+
+/* ================= LIGHTBOX ================= */
+.lightbox {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.92);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  animation: fadeIn 0.4s ease;
+}
+
+.lightbox img {
+  max-width: 90%;
+  max-height: 85vh;
+  border-radius: 22px;
+  animation: zoomIn 0.5s ease;
+}
+
+.lightbox .close {
+  position: absolute;
+  top: 28px;
+  right: 38px;
+  font-size: 48px;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* ================= ANIMATIONS ================= */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    transform: scale(0.7);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* ================= SCROLL REVEAL ================= */
+.reveal {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: 1s ease;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+  .family-overlay h1 {
+    font-size: 42px;
+  }
+
+  .family-overlay p {
+    font-size: 16px;
+  }
+
+  .family-intro {
+    padding: 70px 8%;
+  }
+}
