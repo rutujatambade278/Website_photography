@@ -5,16 +5,23 @@ import "./Header.css";
 const Header = () => {
   const [aboutOpen, setAboutOpen] = useState(false);
   const [serviceOpen, setServiceOpen] = useState(false);
+  const [mobileOpen, setMobileOpen] = useState(false);
 
   return (
     <header className="header">
-      {/* LOGO */}
       <div className="logo-container">
         <img src="/photos/logo1.png" className="logo-img" alt="Logo" />
         <span className="logo-text">FRAME & GLOW</span>
       </div>
 
-      <nav className="nav-center">
+      <div
+        className="mobile-menu-btn"
+        onClick={() => setMobileOpen(!mobileOpen)}
+      >
+        {mobileOpen ? "✖" : "☰"}
+      </div>
+
+      <nav className={`nav-center ${mobileOpen ? "open" : ""}`}>
         <Link to="/">Home</Link>
         <Link to="/portfolio">Portfolio</Link>
 
@@ -29,7 +36,7 @@ const Header = () => {
           <span className="dropdown-title">About ▾</span>
           <div className="dropdown-menu">
             <Link to="/about">About Me</Link>
-         <Link to="/about/question">Questions</Link>
+            <Link to="/about/question">Questions</Link>
             <Link to="/about/MyPhotographyStyle">My Photography Style</Link>
           </div>
         </div>

@@ -16,7 +16,7 @@ const slides = [
   {
     tag: "MATERNITY",
     title: "Indoor Photoshoot",
-    image: "/photos/hero3.jpg",
+    image: "/Gallary/IMG_0158.jpg",
   },
   {
     tag: "WEDDING",
