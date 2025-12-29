@@ -6,19 +6,19 @@ const galleryData = [
     id: 1,
     title: "ADELINE & ROSHWYN",
     date: "JULY 11TH, 2025",
-    img: "/photos/girl.png",
+    img: "/Gallary/IMG_0738.png",
   },
   {
     id: 2,
     title: "RAGAV NAPUR",
     date: "JUNE 21ST, 2025",
-    img: "/photos/butterfly.png",
+    img: "/Gallary/IMG_0158.jpg",
   },
   {
     id: 3,
     title: "DAKSHITA X SAHIL",
     date: "MAY 3RD, 2025",
-    img: "/photos/image.png",
+    img: "/Gallary/IMG_0299.JPG",
   },
   {
     id: 4,

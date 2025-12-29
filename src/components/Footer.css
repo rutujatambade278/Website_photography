@@ -109,3 +109,26 @@
   letter-spacing: 0.5px;
 }
 
+/* SCROLL TO TOP BUTTON */
+.scroll-top {
+  position: fixed;
+  bottom: 30px;
+  right: 25px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: none;
+  background: gold;
+  color: #111;
+  font-size: 26px;
+  cursor: pointer;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.4);
+  transition: all 0.3s ease;
+  z-index: 9999;
+}
+
+.scroll-top:hover {
+  transform: translateY(-6px) scale(1.1);
+  background: #fff;
+}
+
