@@ -1,97 +1,171 @@
 /* PAGE */
 .contact-page {
-  width: 100%;
-  padding: 60px 5%;
-  background: #f5f6fa;
+  background: #f6f6f6;
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
 }
 
-/* CARD FULL WIDTH */
-.contact-card-full {
+/* REVEAL */
+.reveal {
+  opacity: 0;
+  transform: translateY(60px);
+  transition: 1s ease;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ================= HELLO ================= */
+.contact-hello {
+  padding: 120px 15%;
+  text-align: center;
+  background: #fff;
+}
+
+.contact-hello h1 {
+  font-size: 52px;
+  font-family: "Georgia", serif;
+  margin-bottom: 25px;
+}
+
+.contact-hello p {
+  font-size: 20px;
+  line-height: 1.9;
+  color: #555;
+}
+
+/* ================= PHOTOGRAPHER ================= */
+.contact-photographer {
   display: flex;
-  width: 100%;
-  background: white;
-  border-radius: 25px;
-  box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+  align-items: center;
+  padding: 90px 12%;
+  gap: 60px;
+  background: #faf7f2;
+}
+
+.photo-img {
+  flex: 1;
   overflow: hidden;
-  margin-bottom: 50px;
+  border-radius: 25px;
 }
 
-/* LEFT IMAGE */
-.contact-left {
-  width: 45%;
-}
-
-.contact-left img {
+.photo-img img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  transition: 1s ease;
 }
 
-/* RIGHT FORM */
-.contact-right {
-  width: 55%;
-  padding: 50px;
+.photo-img:hover img {
+  transform: scale(1.08);
 }
 
-.contact-right h2 {
-  font-size: 36px;
+.photo-info {
+  flex: 1;
+}
+
+.photo-info h2 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.photo-info p {
+  font-size: 18px;
+  line-height: 1.8;
+  margin-bottom: 25px;
+  color: #555;
+}
+
+.photo-info ul {
+  list-style: none;
+  padding: 0;
+}
+
+.photo-info li {
+  margin-bottom: 12px;
+  font-size: 17px;
+}
+
+/* ================= FORM ================= */
+.contact-form-section {
+  padding: 100px 15%;
+  background: #fff;
+  text-align: center;
+}
+
+.contact-form-section h2 {
+  font-size: 42px;
   margin-bottom: 10px;
 }
 
-.contact-right p {
-  margin-bottom: 25px;
-  color: #666;
+.contact-form-section p {
+  margin-bottom: 40px;
+  color: #777;
 }
 
-/* FORM */
 .contact-form {
+  max-width: 700px;
+  margin: auto;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr 1fr;
   gap: 18px;
 }
 
-.contact-form textarea,
-.contact-form select {
-  grid-column: span 2;
-}
-
 .contact-form input,
-.contact-form textarea,
-.contact-form select {
-  padding: 14px;
-  border-radius: 12px;
-  border: none;
-  background: #f1f1f7;
-}
-
-/* BUTTON */
-.btn-animate {
-  grid-column: span 2;
-  background: linear-gradient(45deg, #6a5acd, #8577ff);
-  color: #fff;
+.contact-form select,
+.contact-form textarea {
   padding: 15px;
-  font-size: 18px;
   border-radius: 12px;
   border: none;
+  background: #f1f1f5;
+  font-size: 16px;
+  transition: 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus,
+.contact-form select:focus {
+  outline: none;
+  background: #fff;
+  box-shadow: 0 0 0 2px #cfa670;
+}
+
+.contact-form textarea {
+  grid-column: span 2;
+}
+
+.contact-form button {
+  grid-column: span 2;
+  padding: 16px;
+  font-size: 18px;
+  background: linear-gradient(45deg, #cfa670, #e6c28b);
+  border: none;
+  border-radius: 30px;
+  color: #111;
   cursor: pointer;
+  transition: 0.4s ease;
 }
 
-/* MAP FULL WIDTH */
-.map-section {
+.contact-form button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+}
+
+/* ================= MAP ================= */
+.contact-map {
+  height: 450px;
   width: 100%;
-  height: 420px;
-  border-radius: 20px;
-  overflow: hidden;
-  box-shadow: 0 12px 30px rgba(0,0,0,0.2);
 }
 
-.map-section iframe {
+.contact-map iframe {
   width: 100%;
   height: 100%;
   border: none;
 }
 
-/* POPUP */
+/* ================= POPUP ================= */
 .popup {
   position: fixed;
   inset: 0;
@@ -102,20 +176,15 @@
 }
 
 .popup-card {
-  background: white;
-  padding: 30px 40px;
-  border-radius: 15px;
+  background: #fff;
+  padding: 35px 45px;
+  border-radius: 18px;
 }
 
-/* RESPONSIVE */
+/* ================= RESPONSIVE ================= */
 @media (max-width: 900px) {
-  .contact-card-full {
+  .contact-photographer {
     flex-direction: column;
-  }
-
-  .contact-left,
-  .contact-right {
-    width: 100%;
   }
 
   .contact-form {
@@ -123,76 +192,7 @@
   }
 
   .contact-form textarea,
-  .btn-animate {
+  .contact-form button {
     grid-column: span 1;
   }
 }
-/* ================= CONTACT INTRO ================= */
-.contact-intro {
-  width: 100%;
-  padding: 120px 8% 80px;
-  text-align: center;
-  background: #ffffff;
-}
-
-/* HELLO */
-.contact-intro h1 {
-  font-size: 48px;
-  font-weight: 400;
-  margin-bottom: 40px;
-  color: #1a1a1a;
-  font-family: "Georgia", serif;
-}
-
-/* FULL WIDTH TEXT */
-.contact-intro h2 {
-  font-size: 22px;
-  font-weight: 400;
-  line-height: 2;
-  color: #333;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-/* NOTE */
-.contact-note {
-  margin-top: 50px;
-  padding-top: 25px;
-  font-size: 16px;
-  line-height: 1.8;
-  color: #666;
-  border-top: 1px solid #e6e6e6;
-  max-width: 900px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-/* subtle luxury highlight */
-.contact-note strong {
-  color: #b89b5e;
-  font-weight: 600;
-}
-
-/* ================= RESPONSIVE ================= */
-@media (max-width: 768px) {
-  .contact-intro {
-    padding: 80px 20px 60px;
-  }
-
-  .contact-intro h1 {
-    font-size: 34px;
-  }
-   .contact-intro h2 {
-    font-size: 30px;
-  }
-
-  .contact-intro h2 {
-    font-size: 18px;
-    line-height: 1.85;
-  }
-
-  .contact-note {
-    font-size: 15px;
-  }
-}
-
