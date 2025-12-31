@@ -156,7 +156,8 @@ const Home = () => {
       </section>
 {/* ================= STORY ================= */}
 <section className="story-section">
-  <div className="story-text">
+  {/* LEFT TEXT */}
+  <div className="story-text reveal-left">
     <h2>Your Story, Captured Beautifully</h2>
 
     <p className="story-tagline">Love. Laughter. Forever.</p>
@@ -165,19 +166,39 @@ const Home = () => {
       <p>Moments made eternal.</p>
       <p>Because love deserves to be remembered.</p>
       <p>Real weddings. Real emotions.</p>
-      <p>Captured with love.</p>
       <p>We shoot what it feels like, not what it looks like.</p>
-      <p>From sacred vows to stolen glances — we capture it all.</p>
-      <p>Moments that matter. Memories that last forever.</p>
-      <p>Every ritual, every emotion, beautifully captured.</p>
-      <p>We don’t just photograph weddings — we preserve emotions.</p>
+      <p>Moments that matter. Memories forever.</p>
     </div>
   </div>
 
-        <div className="story-image">
-          <img src="/photos/Post-Wedding-Rituals-11.jpg" alt="Story" />
-        </div>
-      </section>
+  {/* RIGHT IMAGES */}
+  <div className="story-images reveal-right">
+
+    {/* TOP TWO IMAGES */}
+    <div className="story-images-top">
+      <img
+        src="/photos/story1.jpg"
+        alt="Couple 1"
+        className="story-img small"
+      />
+      <img
+        src="/photos/story2.jpg"
+        alt="Couple 2"
+        className="story-img small"
+      />
+    </div>
+
+    {/* BOTTOM IMAGE */}
+    <div className="story-images-bottom">
+      <img
+        src="/photos/story3.jpg"
+        alt="Couple 3"
+        className="story-img big"
+      />
+    </div>
+
+  </div>
+</section>
 
       {/* ================= PROVIDE ================= */}
       <section className="provide-section">

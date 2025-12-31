@@ -1,10 +1,12 @@
 import React, { useEffect, useState } from "react";
 import "./Footer.css";
+import { Link } from "react-router-dom";
+
+
 
 const Footer = () => {
   const [showTop, setShowTop] = useState(false);
 
-  // show button after scroll
   useEffect(() => {
     const handleScroll = () => {
       setShowTop(window.scrollY > 300);
@@ -15,10 +17,7 @@ const Footer = () => {
   }, []);
 
   const scrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
+    window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
   return (
@@ -26,7 +25,8 @@ const Footer = () => {
       {/* ---------- FOOTER ---------- */}
       <footer className="footer-main">
         <div className="footer-container">
-          {/* LOGO + BRAND */}
+
+          {/* LOGO */}
           <div className="footer-col">
             <div className="footer-logo">
               The Wedding <span>Lens Co.</span>
@@ -40,16 +40,17 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* LINKS */}
+          {/* ✅ USEFUL LINKS (ROUTER LINKS) */}
           <div className="footer-col">
             <h3>Useful Links</h3>
-            <ul>
-              <li>Product Shoot</li>
-              <li>Wedding Shoot</li>
-              <li>Cinematic Shoot</li>
-              <li>Pre-Wedding Shoot</li>
-              <li>All Type Photography</li>
-              <li>All Type Video Shoot</li>
+            <ul className="footer-links">
+              <li><Link to="/ProductShoot">Product Shoot</Link></li>
+              <li><Link to="/services/wedding">Wedding Shoot</Link></li>
+              <li><Link to="/Cenamatic">Cinematic Shoot</Link></li>
+              <li><Link to="/services/prewedding">Pre-Wedding Shoot</Link></li>
+              <li><Link to="/Portfolio">All Type Photography</Link></li>
+              <li><Link to="/Video/Alltypevideo">All Type Video Shoot</Link></li>
+        
             </ul>
           </div>
 
@@ -61,6 +62,7 @@ const Footer = () => {
             <p>✉️ rushibhor214@gmail.com</p>
             <p>📍 Pune, Maharashtra</p>
           </div>
+
         </div>
       </footer>
 
@@ -68,7 +70,7 @@ const Footer = () => {
         © 2025 <b>The Wedding Lens Co.</b> — All Rights Reserved
       </div>
 
-      {/* 🔼 SCROLL TO TOP BUTTON */}
+      {/* 🔼 SCROLL TO TOP */}
       {showTop && (
         <button className="scroll-top" onClick={scrollToTop}>
           ↑
@@ -77,5 +79,8 @@ const Footer = () => {
     </>
   );
 };
+
+
+
 
 export default Footer;

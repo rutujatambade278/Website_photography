@@ -1,0 +1,109 @@
+/* ===== PAGE ===== */
+.video-page {
+  padding: 90px 8%;
+  background: #faf7f2;
+  font-family: "Poppins", sans-serif;
+}
+
+/* ===== HEADER ===== */
+.video-header {
+  max-width: 700px;
+  margin-bottom: 70px;
+}
+
+.video-header h1 {
+  font-size: 48px;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+.video-header p {
+  margin-top: 15px;
+  font-size: 16px;
+  color: #555;
+}
+
+/* ===== GRID (2 CARDS) ===== */
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 45px;
+}
+
+/* ===== CARD ===== */
+.video-card {
+  text-align: center;
+  transition: transform 0.4s ease;
+}
+
+.video-card:hover {
+  transform: translateY(-6px);
+}
+
+/* ===== VIDEO WRAPPER ===== */
+.video-wrapper {
+  position: relative;
+  overflow: hidden;
+  border-radius: 18px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.25);
+}
+
+/* ===== VIDEO ===== */
+.video-wrapper video {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  filter: grayscale(100%) brightness(0.6);
+  transition: 0.6s ease;
+}
+
+/* Hover → Color */
+.video-wrapper:hover video {
+  filter: grayscale(0%) brightness(1);
+  transform: scale(1.05);
+}
+
+/* ===== PLAY ICON ===== */
+.video-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.35);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.4s ease;
+}
+
+.video-overlay span {
+  font-size: 60px;
+  color: #fff;
+  opacity: 0.9;
+}
+
+.video-wrapper:hover .video-overlay {
+  background: rgba(0,0,0,0);
+}
+
+/* ===== TEXT ===== */
+.video-card h3 {
+  margin-top: 20px;
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+
+.video-card p {
+  margin-top: 8px;
+  font-size: 14px;
+  color: #666;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 900px) {
+  .video-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .video-wrapper video {
+    height: 260px;
+  }
+}

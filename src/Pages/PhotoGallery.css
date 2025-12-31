@@ -71,3 +71,47 @@
   letter-spacing: 1px;
   color: #666;
 }
+/* ===== IMAGE BASE STATE (BLACK SHADE) ===== */
+.gallery-card img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  filter: grayscale(100%) brightness(0.65);
+  transition: 
+    filter 0.6s ease,
+    transform 0.6s ease;
+}
+
+/* ===== HOVER: COLOR REVEAL ===== */
+.gallery-card:hover img {
+  filter: grayscale(0%) brightness(1);
+  transform: scale(1.06);
+}
+
+/* ===== CLICK (ACTIVE) ===== */
+.gallery-card:active img {
+  filter: grayscale(0%) brightness(1);
+}
+
+/* ===== IMAGE WRAPPER ===== */
+.img-wrapper {
+  position: relative;
+  overflow: hidden;
+  border-radius: 14px;
+}
+
+/* ===== SOFT DARK OVERLAY ===== */
+.img-wrapper::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.25);
+  transition: opacity 0.6s ease;
+}
+
+.gallery-card:hover .img-wrapper::after {
+  opacity: 0;
+}
+.lightbox-content img {
+  filter: none !important;
+}

@@ -11,12 +11,16 @@ import Contact from "./Pages/Contact";
 import PhotoGallery from "./Pages/PhotoGallery";
 import Services from "./Pages/Services";
 import Portfolio from "./Pages/Portfolio";
+import Alltypevideo from "./Pages/Video/Alltypevideo";
+import Cenamatic from "./Pages/Cenamatic";
+import ProductShoot from "./Pages/ProductShoot";
 
 import Baby from "./Pages/services/Baby";
 import Event from "./Pages/services/Event";
 import Family from "./Pages/services/Family";
 import Maternity from "./Pages/services/Maternity";
-import Wedding from  "./Pages/services/Wedding";
+import Wedding from  "./Pages/services/Wedding"
+;
 
 function App() {
   return (
@@ -41,6 +45,11 @@ function App() {
         <Route path="/portfolio" element={<Portfolio />} />
         <Route path="/gallery" element={<PhotoGallery />} />
         <Route path="/contact" element={<Contact />} />
+         <Route path="/Cenamatic" element={<Cenamatic />} />
+        <Route path="/ProductShoot" element={<ProductShoot />} />
+
+         <Route path="/Video/Alltypevideo" element={<Alltypevideo/>}/>
+        
       </Routes>
 
       <Footer />
