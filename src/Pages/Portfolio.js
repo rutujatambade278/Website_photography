@@ -16,23 +16,23 @@ const videos = [
 
 const images = [
   "/Gallary/DSC07350.JPG",
-  "/Gallary/DSC09251.JPG",
+  "/wedding/PRK02813.jpg",
   "/Gallary/IMG_0158.JPG",
   "/Gallary/IMG_0736.JPG",
-  "/Gallary/DSC07698.JPG",
+  "/Baby/Baby1.JPG",
   "/Gallary/IMG_0745.JPG",
-   "/photos/hero4.jpg",
-  "/photos/boy.png",
-  "/photos/hero2.jpg",
-   "/photos/engegment1.jpg",
-   "/photos/hero1.jpg",
-  "/photos/mehandi1.png",
-  "/photos/girl.png",
-  "/photos/butterfly.png",
-  "/photos/camera.png",
+   "/wedding/PRK02718.jpg",
+  "/Event/IMG_3803.JPG",
+  "/Baby/DSC03734.jpg",
+   "/Baby/DSC03835.jpg",
+   "/Baby/DSC07699.jpg",
+  "/wedding/PRK02661.jpg",
+  "/Baby/family.jpg",
+  "/Gallary/DSC07698.jpg",
+  "/Event/IMG_3791.JPG",
   "/photos/bday2.jpg",
-  "/photos/Post-wedding-Rituals-11.jpg",
-  "/photos/provide2.jpg"
+  "/Baby/Baby3.jpg",
+  "/Baby/DSC07698.jpg"
 ];
 
 const Portfolio = () => {
@@ -77,7 +77,7 @@ const Portfolio = () => {
       <section className="intro" data-aos="fade-up">
         <h2>Our Portfolio</h2>
         <p>
-          Premium wedding, maternity, baby & lifestyle photography with cinematic storytelling.
+          Premium Wedding, Maternity,Bday, Baby & Lifestyle Photography With Cinematic Storytelling.
         </p>
       </section>
 
@@ -107,7 +107,7 @@ const Portfolio = () => {
 
       {/* CTA */}
       <section className="cta" data-aos="fade-up">
-        <h2>Let’s Create Something Beautiful</h2>
+        <h2>Are You Ready To Capture Your Memories...?</h2>
         <button> <a href="/contact">Book Now</a></button>
       </section>
 

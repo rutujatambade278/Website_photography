@@ -25,7 +25,7 @@ const About = () => {
 
      {/* ===== HERO FULL IMAGE WITH TEXT ===== */}
 <section className="about-hero">
-  <img src="/photos/natures.jpg" alt="Photographer" className="hero-bg" />
+  <img src="/MY/12345.jpg" alt="Photographer" className="hero-bg" />
 
   <div className="hero-overlay"></div>
 
@@ -45,7 +45,7 @@ const About = () => {
     <h3>It’s how I feel the world.</h3>
 
     <div className="story-image">
-      <img src="/Gallary/IMG_0738.PNG" alt="Photography Story" />
+      <img src="/MY/1234.jpg" alt="Photography Story" />
     </div>
   </div>
 
@@ -107,25 +107,27 @@ const About = () => {
       {/* ===== IMAGE CAROUSEL ===== */}
       <section className="about-carousel">
         <div className="carousel-track">
-          <img src="/photos/wedding1.jpg" alt="" />
-          <img src="/photos/wedding2.jpg" alt="" />
-          <img src="/photos/hero1.jpg" alt="" />
-          <img src="/photos/hero3.jpg" alt="" />
-          <img src="/photos/nature.png" alt="" />
-          <img src="/photos/bday3.jpg" alt="" />
+          <img src="/Gallary/DSC08568.JPG" alt="" />
+          <img src="/Gallary/IMG_123.jpg" alt="" />
+          <img src="/Baby/DSC03619.jpg" alt="" />
+          <img src="/wedding/PRK02813.jpg" alt="" />
+          <img src="/Gallary/DSC0123.jpg" alt="" />
+          <img src="/Gallary/IMG_0738.png" alt="" />
 
           {/* duplicate for seamless loop */}
-          <img src="/photos/service3.jpg" alt="" />
-          <img src="/photos/video1.mp4" alt="" />
-          <img src="/photos/provider4.jpg" alt="" />
-            <img src="/photos/provider2.jpg" alt="" />
+           <img src="/Gallary/DSC08568.JPG" alt="" />
+          <img src="/Gallary/IMG_123.jpg" alt="" />
+          <img src="/Baby/DSC03619.jpg" alt="" />
+          <img src="/wedding/PRK02813.jpg" alt="" />
+          <img src="/Gallary/DSC0123.jpg" alt="" />
+          <img src="/Gallary/IMG_0738.png" alt="" />
         </div>
       </section>
 
       {/* ===== SIGNATURE ===== */}
       <section className="about-signature reveal">
         <p>Let’s create something timeless together.</p>
-        <h3>— XYZ Photography</h3>
+        <h3>— The Wedding Lens Co. Photography</h3>
       </section>
 
     </div>

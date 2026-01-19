@@ -132,3 +132,19 @@
   background: #fff;
 }
 
+.footer-links li {
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+.footer-links a {
+  color: #ddd;
+  text-decoration: none;
+  font-size: 15px;
+  transition: all 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #b89b5e;
+  padding-left: 6px;
+}

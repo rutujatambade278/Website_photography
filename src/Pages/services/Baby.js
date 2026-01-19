@@ -41,15 +41,19 @@ const Baby = () => {
 
       {/* FULL WIDTH GALLERY */}
       <section className="baby-gallery">
-        <img src="/photos/baby/b1.jpg" alt="baby" />
-        <img src="/photos/baby/b2.jpg" alt="baby" />
-        <img src="/photos/baby/b3.jpg" alt="baby" />
-        <img src="/photos/baby/b4.jpg" alt="baby" />
-        <img src="/photos/baby/b5.jpg" alt="baby" />
-        <img src="/photos/baby/b6.jpg" alt="baby" />
-        <img src="/photos/baby/b7.jpg" alt="baby" />
-        <img src="/photos/baby/b8.jpg" alt="baby" />
-        <img src="/photos/baby/b9.jpg" alt="baby" />
+        <img src="/Baby/DSC03734.jpg" alt="baby" />
+        <img src="/Baby/DSC07599.jpg" alt="baby" />
+        <img src="/Baby/DSC07912.jpg" alt="baby" />
+        <img src="/Baby/DSC03835.jpg" alt="baby" />
+        <img src="/Baby/365018952.webp" alt="baby" />
+        <img src="/Baby/Baby4.jpg" alt="baby" />
+        <img src="/Baby/Baby3.jpg" alt="baby" />
+        <img src="/Baby/Baby2.jpg" alt="baby" />
+        <img src="/Baby/Baby1.jpg" alt="baby" />
+         <img src="/Baby/Baby5.jpg" alt="baby" />
+          <img src="/Baby/Baby6.jpg" alt="baby" />
+           <img src="/Baby/Baby7.jpg" alt="baby" />
+            <img src="/Baby/Baby8.jpg" alt="baby" />
       </section>
 
       {/* CTA */}

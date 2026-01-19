@@ -7,7 +7,7 @@ const Wedding = () => {
       {/* HERO */}
       <section className="wedding-hero">
         <img
-          src="/photos/wedding-hero.jpg"
+          src="/wedding/PRK02732.jpg"
           alt="Wedding"
           className="wedding-hero-img"
         />
@@ -33,8 +33,8 @@ const Wedding = () => {
 
       {/* GALLERY */}
       <section className="wedding-gallery">
-        <img src="/photos/w1.jpg" alt="" />
-        <img src="/photos/w2.jpg" alt="" />
+        <img src="/wedding/PRK02732.jpg" alt="" />
+        <img src="/wedding/PRK0343.jpg" alt="" />
         <img src="/photos/w3.jpg" alt="" />
         <img src="/photos/w4.jpg" alt="" />
         <img src="/photos/w5.jpg" alt="" />

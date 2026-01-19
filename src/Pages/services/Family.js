@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import "./Family.css";
 
 const images = [
-  "/photos/family/f1.jpg",
+  "/Baby/family.jpg",
   "/photos/family/f2.jpg",
   "/photos/family/f3.jpg",
   "/photos/family/f4.jpg",

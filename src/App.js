@@ -22,7 +22,7 @@ function App() {
   return (
     <Router>
       <Header />
-      <SocialBar />
+      {/* <SocialBar /> */}
 
       <Routes>
         <Route path="/" element={<Home />} />

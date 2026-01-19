@@ -21,7 +21,7 @@ const slides = [
   {
     tag: "WEDDING",
     title: "Photoshoot",
-    image: "/Gallary/DSC09251.JPG",
+    image: "/wedding/PRK02718.jpg",
   },
 ];
 
@@ -104,13 +104,10 @@ const Home = () => {
 
       {/* ================= INTRO SECTION ================= */}
       <section className="intro-section">
-        <div className="intro-image">
-          <img src="/photos/intro.jpg" alt="Wedding Photographer" />
-        </div>
-
+     
         <div className="intro-text">
           <h1>
-            Hello. My name is <span>XYZ</span>, I’m a photographer in
+            Hello. My name is <span>Rushikesh Bhor</span>, I’m a photographer in
             <br /> Pune & Mumbai
           </h1>
 
@@ -124,6 +121,11 @@ const Home = () => {
             <span></span>
           </div>
         </div>
+
+           <div className="intro-image">
+          <img src="/MY/123.jpg" alt="Wedding Photographer" />
+        </div>
+
       </section>
 
       {/* ================= SERVICES ================= */}
@@ -139,7 +141,7 @@ const Home = () => {
           </div>
 
           <div className="service-card">
-            <img src="/photos/service2.jpg" alt="Wedding" />
+            <img src="/wedding/PRK02743.jpg" alt="Wedding" />
             <h3>Wedding Photography</h3>
           </div>
 
@@ -167,7 +169,6 @@ const Home = () => {
       <p>Real weddings. Real emotions.</p>
       <p>Captured with love.</p>
       <p>We shoot what it feels like, not what it looks like.</p>
-      <p>From sacred vows to stolen glances — we capture it all.</p>
       <p>Moments that matter. Memories that last forever.</p>
       <p>Every ritual, every emotion, beautifully captured.</p>
       <p>We don’t just photograph weddings — we preserve emotions.</p>
@@ -175,7 +176,7 @@ const Home = () => {
   </div>
 
         <div className="story-image">
-          <img src="/photos/Post-Wedding-Rituals-11.jpg" alt="Story" />
+          <img src="/wedding/PRK02732.jpg" alt="Story" />
         </div>
       </section>
 
